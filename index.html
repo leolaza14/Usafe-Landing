@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usafe — Tu seguridad en tus manos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Fuente: Google Fonts (puedes cambiar si lo deseas) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Usafe logo" class="logo"/>
+        <span class="brand-text">Usafe</span>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#app">App</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <button class="cta no-link">Empieza ahora</button>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1>Tu seguridad<br><span class="accent">en tus manos</span></h1>
+        <p class="lead">Reporta incidentes, recibe alertas y visualiza zonas de riesgo en tiempo real con Usafe.</p>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <img src="images/logo.png" alt="Usafe logo" class="hero-logo"/>
+          <button class="cta no-link">Empieza ahora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios" class="services container">
+    <h2 class="section-title">Nuestros servicios</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/service1.jpg" alt="Reportar incidentes" />
+        <h3>Reportar incidentes</h3>
+        <p>Registra de manera sencilla cualquier hecho de inseguridad que ocurra en tu entorno. En pocos pasos podrás compartir información confiable.</p>
+      </article>
+      <article class="card">
+        <img src="images/service2.jpg" alt="Mapa de calor" />
+        <h3>Mapa de calor</h3>
+        <p>Explora un mapa interactivo que muestra las zonas con mayor concentración de incidentes y patrones de riesgo.</p>
+      </article>
+      <article class="card">
+        <img src="images/service3.jpg" alt="Reportes comunitarios" />
+        <h3>Reportes comunitarios</h3>
+        <p>Accede a los reportes de otros usuarios en tiempo real para crear una red de apoyo y prevención en tu barrio.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT / NOSOTROS -->
+  <section id="nosotros" class="about container">
+    <div class="about-inner">
+      <img src="images/community.jpg" alt="Comunidad" class="about-image"/>
+      <div class="about-copy">
+        <h2>Sobre nosotros</h2>
+        <p>Usafe es una plataforma colaborativa diseñada para fortalecer la seguridad en las comunidades. Facilitamos la comunicación, la verificación de incidentes y el vínculo con autoridades locales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP SHOWCASE -->
+  <section id="app" class="app-showcase">
+    <div class="app-wave"></div>
+    <div class="container app-inner">
+      <h2 class="section-title white">Nuestra APP</h2>
+      <p class="app-lead white">Usafe es una aplicación móvil intuitiva para reportes en tiempo real y análisis de seguridad.</p>
+
+      <div class="app-mocks">
+        <div class="mock-icon">
+          <img src="images/app-mock1.png" alt="Mockup 1"/>
+        </div>
+        <div class="mock-device">
+          <img src="images/app-mock2.png" alt="Mockup 2"/>
+        </div>
+        <div class="download-cta">
+          <h3>Download APP</h3>
+          <img src="images/police.png" alt="Policía ilustración" class="police-illus"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="contact container">
+    <h2 class="section-title">Contáctanos</h2>
+    <div class="contact-grid">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <h4>Correo</h4>
+          <p>ServicioCliente@usafe.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <h4>Llámanos</h4>
+          <p>998526059 / 36159865</p>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" onsubmit="return handleContact(event)">
+        <h3>Para cualquier duda</h3>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required/>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required/>
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Empresas afiliadas</h4>
+        <ul><li>Es Salud</li><li>Municipalidad</li></ul>
+      </div>
+      <div>
+        <h4>Comunidad</h4>
+        <ul><li>Centro de seguridad</li><li>Foro local</li></ul>
+      </div>
+      <div>
+        <h4>Publicidad</h4>
+        <ul><li>Normas de anuncios</li><li>Políticas</li></ul>
+      </div>
+      <div class="socials">
+        <h4>Síguenos</h4>
+        <div class="icons">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="Facebook">fb</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Usafe. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    // small script: update year + handle contact
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleContact(evt){
+      evt.preventDefault();
+      // In prototype: simple confirmation
+      alert('Gracias por tu mensaje. En el demo, esto no envía correos.'); 
+      // reset
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+
+    // Simple menu toggle for mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle && toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
